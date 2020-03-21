@@ -49,6 +49,23 @@
 [Урок 16-1](https://mdaurtseff.github.io/html_lessons/lesson_16-1/project/src/ "Урок 16-1") - Верстка макета сайта, практика часть 4
 
 [Урок 17](https://mdaurtseff.github.io/html_lessons/lesson_17/Project/src/ "Урок 17") - Всплывающие окна.
+
+[Урок 18](https://mdaurtseff.github.io/html_lessons/lesson_18/ "Урок 18") - Табы и Аккордеон.
+
+[Урок 18-1](https://mdaurtseff.github.io/html_lessons/lesson_18-1/ "Урок 18-1") - Табы и Аккордеон.
+
+[Урок 19](https://mdaurtseff.github.io/html_lessons/lesson_19/ "Урок 19") - Анимация на CSS3.
+
+[Урок 19-1](https://mdaurtseff.github.io/html_lessons/lesson_19-1/ "Урок 19-1") - Анимация на CSS3.
+
+[Урок 20](https://mdaurtseff.github.io/html_lessons/lesson_20/ "Урок 20") - Видео-фон на сайте.
+
+[Урок 21](https://mdaurtseff.github.io/html_lessons/lesson_21/ "Урок 21") - Parallax эффект для сайта.
+
+[Урок 21-1](https://mdaurtseff.github.io/html_lessons/lesson_21-1/project/src/ "Урок 21-1") - Верстка макета сайта, практика часть 5-6.
+
+[Урок 22](https://mdaurtseff.github.io/html_lessons/lesson_22/ "Урок 22") - Гео-карты для сайта.
+
 ---------------------------------------------------------------------------------------------------
 Javascript
 
