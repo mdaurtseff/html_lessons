@@ -1,0 +1,270 @@
+/* Fonts*/
+@font-face {
+  font-family: 'ProximaNovaRg';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Regular.woff2') format('woff2'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaBd';
+  src: url('../fonts/ProximaNova-Bold.eot');
+  src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Bold.woff2') format('woff2'), url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf') format('truetype'), url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+/* Colors */
+/* Basic setting */
+html {
+  font-size: 10px;
+}
+button:focus,
+input:focus,
+a:focus {
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.button {
+  background-color: #ffb504;
+  color: #ffffff;
+  padding: 1rem 3rem;
+  font-size: 12px;
+  font-weight: 400;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+}
+/* main */
+.main {
+  background: #ffffff url('../img/bg-main.jpg') center center no-repeat;
+  background-size: cover;
+  padding: 3rem 0 5rem;
+}
+.main-content {
+  margin-top: 10rem;
+  /*Главный контент слева */
+}
+.main-content-left {
+  /*Заголовок */
+  /*Подзаголовок */
+  /*Стоимость*/
+  /*По факту*/
+}
+.main-content-left-header {
+  color: #292929;
+  text-transform: uppercase;
+  font-family: 'ProximaNovaBd', sans-serif;
+}
+.main-content-left-header h1 {
+  line-height: 1.45;
+  font-size: 3.2rem;
+}
+.main-content-left-subtitle {
+  margin-top: 3rem;
+  font-family: 'ProximaNovaRg', sans-serif;
+  font-size: 1.8rem;
+}
+.main-content-left-prize {
+  margin-top: 2rem;
+  padding: 1.3rem 3rem;
+  display: inline-block;
+  text-align: center;
+  font-family: 'ProximaNovaRg', sans-serif;
+  font-size: 1.7rem;
+  color: #ffffff;
+  background-color: #70c849;
+}
+.main-content-left-fact {
+  font-family: 'ProximaNovaBd', sans-serif;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+.main-content-right-form {
+  text-align: center;
+  background-color: #fff;
+  padding: 3rem 5rem;
+}
+.main-content-right-form h2 {
+  font-size: 1.7rem;
+  font-family: 'ProximaNovaRg', sans-serif;
+}
+.main-content-right-form input {
+  height: 4rem;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-top: 3rem;
+}
+.main-content-right-form label {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  border: 2.5px solid #fff;
+  background-color: #fff;
+}
+.main-content-right-form-btn {
+  height: 5rem;
+  width: 100%;
+  font-family: 'ProximaNovaBd', sans-serif;
+  font-size: 14px;
+}
+.main-content-right-form-btn:hover {
+  cursor: pointer;
+  background-color: #df9d00;
+}
+.main-content-right-form-subtitle {
+  font-family: 'ProximaNovaRg', sans-serif;
+  font-size: 13px;
+  margin-top: 10px;
+}
+.main-content-right-form .text-input-name,
+.main-content-right-form .text-input-phone {
+  font-size: 1.6rem;
+}
+.main-content-right-subtitle {
+  text-align: center;
+  font-family: 'ProximaNovaRg', sans-serif;
+  font-size: 12px;
+  margin-top: 1.5rem;
+}
+.header {
+  height: 7rem;
+}
+.header .btn-header {
+  position: absolute;
+  left: 16%;
+  font-family: 'ProximaNovaRg', sans-serif;
+}
+.header .btn-header:hover {
+  cursor: pointer;
+  background-color: #df9d00;
+}
+.phone-link {
+  display: inline-block;
+  color: #292929;
+  font-weight: 700;
+  font-size: 1.9rem;
+  height: 7rem;
+  line-height: 7rem;
+  font-family: 'ProximaNovaBd', sans-serif;
+  position: absolute;
+  left: 16%;
+}
+.phone-link:hover {
+  text-decoration: none;
+}
+/* Оформление секции с преимущиствами */
+.features .section-header {
+  font-family: 'ProximaNovaBd', sans-serif;
+  color: #1a1820;
+  text-align: center;
+  font-size: 3.6rem;
+  margin-top: 10rem;
+  margin-bottom: 13rem;
+}
+.features-block {
+  text-align: center;
+}
+.features-block h3 {
+  margin-bottom: 2.8rem;
+}
+.features-block p {
+  font-size: 1.6rem;
+}
+.features-img img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  height: 7rem;
+}
+.slick-active {
+  outline: none;
+}
+.prevbtn,
+.nextbtn {
+  position: absolute;
+  top: 50%;
+  transform: scaleY(-50%);
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  color: #49bf15;
+  background-size: 70%;
+}
+.prevbtn {
+  background: url(../img/left-arrow.svg) center no-repeat;
+  left: 0;
+}
+.nextbtn {
+  background: url(../img/right-arrow.svg) center no-repeat;
+  right: 0;
+}
+@media (max-width: 1190px) {
+  .phone-link {
+    left: -25%;
+  }
+}
+@media (max-width: 991px) {
+  .main {
+    background-position: top right;
+  }
+  .main-content-left {
+    text-align: center;
+  }
+  .main-content-right-form {
+    width: 50%;
+    position: relative;
+    left: 25%;
+  }
+  .main-content-left-fact {
+    padding-bottom: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .main {
+    background-position: top left;
+  }
+  .phone-link {
+    left: 25%;
+  }
+  .header .btn-header {
+    left: 30%;
+    margin-top: 2rem;
+  }
+  .main-content-right-form {
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+  .features .section-header {
+    font-size: 3.1rem;
+    margin-bottom: 10rem;
+  }
+}
+@media (max-width: 366px) {
+  .main-content-left-header h1 {
+    font-size: 2.7rem;
+  }
+  .header .btn-header {
+    left: 22%;
+  }
+  .phone-link {
+    font-size: 1.5rem;
+    left: 30%;
+  }
+  .features .section-header {
+    font-size: 2.3rem;
+    margin-bottom: 8rem;
+  }
+}
+/* Ok h*/
+@-moz-document url-prefix() {
+  .label-phone-firefox {
+    margin-top: 7rem;
+  }
+}

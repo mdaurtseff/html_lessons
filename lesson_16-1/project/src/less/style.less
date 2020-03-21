@@ -1,0 +1,312 @@
+/* Fonts*/
+@font-face {
+    font-family: 'ProximaNovaRg';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNovaBd';
+    src: url('../fonts/ProximaNova-Bold.eot');
+    src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Bold.woff') format('woff'),
+        url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+.bold() {
+	font-family: 'ProximaNovaBd', sans-serif;
+}
+.reg() {
+	font-family: 'ProximaNovaRg', sans-serif;
+}
+/* Colors */
+@text: #292929;
+@htext: #1a1820;
+@btn: #ffb504;
+@green: #358015;
+@red: #ff0000;
+@bg: #286b0a;
+@select-green: #49bf15;
+@light: #fff;
+@bg-light: #f5f5f5;
+
+/* Basic setting */
+html {
+	font-size: 10px;
+}
+button, input, a {
+	&:focus {
+ outline: none;
+ } 
+}
+ a { 
+ 	&:hover{
+ 	text-decoration: none;
+ }
+ }
+
+.button {
+	background-color: @btn;
+	color: @light;
+	padding: 1rem 3rem;
+	font-size: 12px;
+	font-weight: 400;
+	border: none;
+	border-radius: 8px;
+	text-transform: uppercase;
+	margin-top: 1.5rem;
+}
+
+/* main */
+.main {
+	background: #fff url('../img/bg-main.jpg') center center no-repeat;
+	background-size: cover;
+	padding: 3rem 0 5rem;
+	&-content{
+		margin-top: 10rem;
+		/*Главный контент слева */
+		&-left{
+		
+		/*Заголовок */
+		&-header {
+			color: @text;
+			text-transform: uppercase;
+			.bold();
+			h1 {
+				line-height: 1.45;
+				font-size: 3.2rem;
+			}
+		}
+		/*Подзаголовок */
+		&-subtitle { 
+			margin-top: 3rem;
+			.reg();
+			font-size: 1.8rem;
+		}
+		/*Стоимость*/
+		&-prize {
+			margin-top: 2rem;
+			padding: 1.3rem 3rem;
+			display: inline-block;
+			text-align: center;
+			.reg();
+			font-size: 1.7rem;
+			color: @light;
+			background-color: #70c849;
+		}
+		/*По факту*/
+		&-fact {
+			.bold();
+			text-transform: uppercase;
+			margin-top: 2rem;
+			font-size: 2rem;	
+		}
+	}
+	&-right {
+		&-form {
+			text-align: center;
+			background-color: #fff;
+			padding: 3rem 5rem;
+			h2 {
+			font-size: 1.7rem;
+			.reg();
+				}
+				input {
+					height: 4rem;
+					width: 100%;
+					border-radius: 5px;
+					border: 1px solid #ddd;
+					margin-top: 3rem;
+				}
+				label {
+					position: absolute;
+					left: 50%;
+					transform: translateX(-50%) translateY(100%);
+					border: 2.5px solid #fff;
+					background-color: #fff;
+				}
+				&-btn {
+					height: 5rem;
+					width: 100%;
+					.bold();
+					font-size: 14px;
+					&:hover {
+    				cursor: pointer;
+    				background-color: darken(@btn, 7%);
+   			 		} 
+				}
+				&-subtitle {
+					.reg();
+					font-size: 13px;
+					margin-top: 10px;
+				}
+				.text-input-name, .text-input-phone {
+					font-size: 1.6rem;
+				}
+		}
+		&-subtitle {
+			text-align: center;
+			.reg();
+			font-size: 12px;
+			margin-top: 1.5rem;
+		}
+	}
+}
+}
+.header	{
+	height: 7rem;
+	.btn-header {
+	    position: absolute;
+    left: 16%;
+    .reg();
+    &:hover {
+    	cursor: pointer;
+    	background-color: darken(@btn, 7%);
+    } 
+}
+}
+
+.phone-link {
+	display: inline-block;
+	color: @text;
+	font-weight: 700;
+	font-size: 1.9rem;
+	height: 7rem;
+	line-height: 7rem;
+	.bold();
+	position: absolute;
+   	left: 16%;
+	&:hover {
+		text-decoration: none;
+	}
+	}
+	/* Оформление секции с преимущиствами */
+.features {
+	.section-header{
+		.bold();
+		color: @htext;
+		text-align: center;
+		font-size: 3.6rem;
+		margin-top: 10rem;
+		margin-bottom: 13rem;
+	}
+	&-block {
+	text-align: center;
+	h3 {
+		margin-bottom: 2.8rem;
+	}
+	p {
+		font-size: 1.6rem;
+	}
+	}
+	&-img {
+		img {
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 3rem;
+			height: 7rem;
+		}
+	}
+}
+.slick-active {
+	outline: none;
+}
+.prevbtn, .nextbtn{
+	position: absolute;
+	top: 50%;
+	transform: scaleY(-50%);
+	z-index: 99;
+	width: 2rem;
+	height: 2rem;
+	border: none;
+	color: @select-green;
+	background-size: 70%;
+}
+.prevbtn {
+	background: url(../img/left-arrow.svg) center no-repeat;
+	left: 0;
+}
+.nextbtn {
+	background: url(../img/right-arrow.svg) center no-repeat;
+	right: 0;
+}
+
+@media (max-width: 1190px) {
+	.phone-link {
+	left: -25%;
+	}
+}
+@media (max-width: 991px) {
+	.main {
+		background-position: top right;
+	}	
+	.main-content-left {
+		text-align: center;
+	}
+	.main-content-right-form {
+		width: 50%;
+		position: relative;
+		left: 25%;
+	}
+	.main-content-left-fact {
+		padding-bottom: 1rem;
+	}
+}
+@media (max-width: 767px){
+	.main {
+		background-position: top left;
+	}
+	.phone-link {
+	left: 25%;
+	}
+	.header .btn-header {
+		left: 30%;
+		margin-top: 2rem;
+	}
+		.main-content-right-form {
+		width: 100%;
+		position: relative;
+		left: 0;
+	}
+	.features {
+		.section-header {
+			font-size: 3.1rem;
+			margin-bottom: 10rem;
+		}
+	}
+}
+@media (max-width: 366px){
+.main-content-left-header {
+	h1 {
+		font-size: 2.7rem;
+	}
+	}
+	.header .btn-header {
+		left: 22%;
+	}
+	.phone-link {
+		font-size: 1.5rem;
+		left: 30%;
+	}
+	.features {
+		.section-header {
+			font-size: 2.3rem;
+			margin-bottom: 8rem;
+		}
+	}
+}
+/* Ok h*/
+@-moz-document url-prefix() {
+  .label-phone-firefox {
+    margin-top: 7rem;
+  }
+}
