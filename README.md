@@ -62,7 +62,7 @@
 
 [Урок 21](https://mdaurtseff.github.io/html_lessons/lesson_21/ "Урок 21") - Parallax эффект для сайта.
 
-[Урок 21-1](https://mdaurtseff.github.io/html_lessons/lesson_21-1/project/src/ "Урок 21-1") - Верстка макета сайта, практика часть 5-6.
+[Урок 21-1](https://mdaurtseff.github.io/html_lessons/lesson_21-1/project/src/ "Урок 21-1") - Верстка макета сайта, практика часть 5-7.
 
 [Урок 22](https://mdaurtseff.github.io/html_lessons/lesson_22/ "Урок 22") - Гео-карты для сайта.
 
