@@ -1,0 +1,38 @@
+/* Colors */
+/* Basic setting */
+html {
+  font-size: 10px;
+}
+.button {
+  background-color: #ffb504;
+  color: #ffffff;
+  padding: 1rem 3rem;
+  font-size: 12px;
+  font-weight: 400;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+}
+/* main */
+main {
+  padding: 1.5rem 0;
+}
+.header {
+  height: 7rem;
+}
+.phone-link {
+  display: inline-block;
+  color: #292929;
+  font-weight: 700;
+  font-size: 1.9rem;
+  height: 7rem;
+  line-height: 7rem;
+  font-family: "Proxima Nova";
+}
+/* Ok h*/
+@-moz-document url-prefix() {
+  .phone-link {
+    font-size: 1.6rem;
+  }
+}
