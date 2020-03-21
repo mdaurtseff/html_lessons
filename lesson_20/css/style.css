@@ -1,0 +1,37 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+}
+.section {
+	min-height: 100vh;
+	text-align: center;
+	width: 100%;
+	display: table;
+/*	background: url(../video/coverr-turkish-horses-on-the-farm--1563373320700.jpg) no-repeat center;*/
+	background-size: cover;
+}
+.wrap-block {
+	display: table-cell;
+	vertical-align: middle;
+	color: #fff;
+
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+  text-align: left;
+  padding-left: 17px;
+}
+::-moz-placeholder { /* Firefox 4 - 18 */
+  color: #fff;
+  opacity: 1;
+  text-align: left;
+  padding-left: 17px;
+}
+@-moz-document url-prefix() {
+ .section {
+ 	height: 1000px;
+ }
+}

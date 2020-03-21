@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	  <!-- Важная техническая информация для браузера -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+		<title>lesson_18-1</title>
+
+		<!-- Подключаем наш файл со стилями, который находится в папке css-->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+			<!-- Подключаем Шрифты-->
+		<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+		<link rel="stylesheet" href="css/animate.css">
+</head>
+<body class="wow fadeIn" data-wow-delay="1s">
+	<div class="container">
+	<div class="box-reg">
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active indentation" id="pills-input-tab" data-toggle="pill" href="#pills-input" role="tab" aria-controls="pills-input" aria-selected="true">Вход</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-registration-tab" data-toggle="pill" href="#pills-registration" role="tab" aria-controls="pills-registration" aria-selected="false">Регистрация</a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+
+  <div class="tab-pane fade show active" id="pills-input" role="tabpanel" aria-labelledby="pills-input-tab">
+  	<div class="content-input-border">
+	<div class="content-input-main">
+				  		<form action="">
+				  			<input type="text" class="input input-name wow fadeIn" data-wow-delay="1.5s" placeholder="Ваше имя">
+				  			<input type="text" class="input input-pass wow fadeIn" data-wow-delay="1.5s" placeholder="Пароль">
+				  		</form>
+				  		<a href="#" class="foget-pass">Забыли пароль ?</a>
+				  		<input type="checkbox" class="checkbox-inline">
+				  		<p class="remind-inline">Напомнить мне</p>
+				  		<div class="input-button wow bounceIn" data-wow-delay="1.5s"><a href="#">Войти</a></div>
+				  		<div class="flaps wow bounceIn" data-wow-delay="1.5s"></div>
+				  	</div>			  	
+  </div>
+</div>
+
+  <div class="tab-pane fade" id="pills-registration" role="tabpanel" aria-labelledby="pills-registration-tab">
+	  	<div class="content-input-border">
+	<div class="content-input-main">
+				  		<form action="">
+				  			<input type="text" class="input input-name registration-input-name wow fadeIn" placeholder="Ваш email">
+				  			<input type="text" class="input input-pass registration-input-pass wow fadeIn" placeholder="Пароль">
+				  			<input type="text" class="input input-pass-return registration-input-return wow fadeIn" placeholder="Повторите пароль">
+				  		</form>
+				  		<div class="input-button registration-input-button wow bounceIn"><a href="#">Зарегистрироваться</a></div>
+				  		<div class="flaps registration-input-flaps wow bounceIn"></div>
+				  	</div>			  	
+  </div>
+  </div>
+</div>
+	</div>
+  </div>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js">
+</script>
+<script>  new WOW().init();</script>
+</body>
+</html>

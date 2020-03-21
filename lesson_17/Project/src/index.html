@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	  <!-- Важная техническая информация для браузера -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Подключение стилей Bootstrap!-->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+		<link rel="stylesheet" href="css/style.css">
+		<title>Модальные окна</title>
+</head>
+<body>
+<div class="container">
+	<button class="btn btn-danger button-delete" data-toggle="modal" data-target="#delete">Удалить файл</button>
+</div>
+<div class="modal fade main-modal"id="delete">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Удаление файла</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Вы действительно хотите удалить файл ?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Нет</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Да</button>
+      </div>
+    </div>
+  </div>
+</div>
+	<!-- Подключение скриптов для работы с модальными окнами !-->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

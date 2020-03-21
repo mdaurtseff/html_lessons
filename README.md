@@ -48,6 +48,7 @@
 
 [Урок 16-1](https://mdaurtseff.github.io/html_lessons/lesson_16-1/project/src/ "Урок 16-1") - Верстка макета сайта, практика часть 4
 
+[Урок 17](https://mdaurtseff.github.io/html_lessons/lesson_17/Project/src/ "Урок 17") - Всплывающие окна.
 ---------------------------------------------------------------------------------------------------
 Javascript
 

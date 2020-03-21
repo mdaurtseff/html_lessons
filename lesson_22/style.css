@@ -1,0 +1,38 @@
+.map {
+}
+.page-on-map {
+	transform: translateX(100%) translateY(-100%);
+	height: 400px;
+	width: 380px;
+	background-color: #c60b0b;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 4rem;
+}
+.page-on-map h2 {
+	margin-bottom: 2rem;
+}
+.page-on-map p:last-child {
+	text-decoration: underline;
+}
+footer {
+	transform: translateY(-420%);
+}
+footer .media-body p {
+	line-height: 1.35;
+}
+.grey {
+	font-size: 14px;
+	color: #666;
+	text-align: center;
+	padding-top: 10px;
+}
+.phone {
+	font-size: 22px;
+	font-weight: 400;
+	text-align: right;
+}
+.adress {
+	font-size: 14px;
+	text-align: right;
+}
