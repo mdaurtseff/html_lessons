@@ -1,0 +1,1065 @@
+/* Fonts*/
+@font-face {
+    font-family: 'ProximaNovaRg';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'ProximaNovaBd';
+    src: url('../fonts/ProximaNova-Bold.eot');
+    src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Bold.woff') format('woff'),
+        url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+.bold() {
+	font-family: 'ProximaNovaBd', sans-serif;
+}
+.reg() {
+	font-family: 'ProximaNovaRg', sans-serif;
+}
+/* Colors */
+@text: #292929;
+@htext: #1a1820;
+@btn: #ffb504;
+@green: #358015;
+@red: #ff0000;
+@bg: #286b0a;
+@select-green: #49bf15;
+@bg-price: #006a00;
+@light: #fff;
+@bg-light: #f5f5f5;
+/* Basic setting */
+html {
+	font-size: 10px;
+}
+button, input, a {
+	&:focus {
+ outline: none;
+ } 
+}
+ a { 
+ 	&:hover{
+ 	text-decoration: none;
+ }
+ }
+
+.button {
+	background-color: @btn;
+	color: @light;
+	padding: 1rem 3rem;
+	font-size: 12px;
+	font-weight: 400;
+	border: none;
+	border-radius: 8px;
+	text-transform: uppercase;
+	margin-top: 1.5rem;
+}
+
+/* main */
+.main {
+	background: @light url('../img/bg-main.jpg') center center no-repeat;
+	background-size: cover;
+	padding: 3rem 0 5rem;
+	&-content{
+		margin-top: 10rem;
+		/*Главный контент слева */
+		&-left{
+		
+		/*Заголовок */
+		&-header {
+			color: @text;
+			text-transform: uppercase;
+			.bold();
+			h1 {
+				line-height: 1.45;
+				font-size: 3.2rem;
+			}
+		}
+		/*Подзаголовок */
+		&-subtitle { 
+			margin-top: 3rem;
+			.reg();
+			font-size: 1.8rem;
+		}
+		/*Стоимость*/
+		&-prize {
+			margin-top: 2rem;
+			padding: 1.3rem 3rem;
+			display: inline-block;
+			text-align: center;
+			.reg();
+			font-size: 1.7rem;
+			color: @light;
+			background-color: #70c849;
+		}
+		/*По факту*/
+		&-fact {
+			.bold();
+			text-transform: uppercase;
+			margin-top: 2rem;
+			font-size: 2rem;	
+		}
+	}
+	&-right {
+		&-form {
+			text-align: center;
+			background-color: @light;
+			padding: 3rem 5rem;
+			h2 {
+			font-size: 1.7rem;
+			.reg();
+				}
+				input {
+					height: 4rem;
+					width: 100%;
+					border-radius: 5px;
+					border: 1px solid #ddd;
+					margin-top: 3rem;
+				}
+				label {
+					position: absolute;
+					left: 50%;
+					transform: translateX(-50%) translateY(100%);
+					border: 2.5px solid @light;
+					background-color: @light;
+
+				}
+				&-btn {
+					height: 5rem;
+					width: 100%;
+					.bold();
+					font-size: 14px;
+					&:hover {
+    				cursor: pointer;
+    				background-color: darken(@btn, 7%);
+   			 		} 
+				}
+				&-subtitle {
+					.reg();
+					font-size: 13px;
+					margin-top: 10px;
+				}
+				.text-input-name, .text-input-phone {
+					font-size: 1.6rem;
+				}
+		}
+		&-subtitle {
+			text-align: center;
+			.reg();
+			font-size: 12px;
+			margin-top: 1.5rem;
+		}
+	}
+}
+}
+.header	{
+	height: 7rem;
+	.btn-header {
+	    position: absolute;
+    left: 16%;
+    .reg();
+    &:hover {
+    	cursor: pointer;
+    	background-color: darken(@btn, 7%);
+    } 
+}
+}
+
+.phone-link {
+	display: inline-block;
+	color: @text;
+	font-weight: 700;
+	font-size: 1.9rem;
+	height: 7rem;
+	line-height: 7rem;
+	.bold();
+	position: absolute;
+   	left: 16%;
+	&:hover {
+		text-decoration: none;
+	}
+	}
+	
+	/* Оформление секции с преимущиствами */
+		.section-header{
+		.bold();
+		color: @htext;
+		text-align: center;
+		font-size: 3.6rem;
+		margin-top: 10rem;
+		margin-bottom: 13rem;
+		 &_light {
+		 	color: @light;
+		 	margin-top: 12rem;
+		 }
+	}
+
+	/* Оформление заголовков */
+
+.features {
+	margin-bottom: 14rem;
+	&-block {
+	text-align: center;
+	h3 {
+		margin-bottom: 2.8rem;
+	}
+	p {
+		font-size: 1.6rem;
+	}
+	}
+	&-img {
+		img {
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 3rem;
+			height: 7rem;
+		}
+	}
+}
+.slick-active {
+	outline: none;
+}
+.prevbtn, .nextbtn{
+	position: absolute;
+	top: 50%;
+	transform: scaleY(-50%);
+	z-index: 99;
+	width: 2rem;
+	height: 2rem;
+	border: none;
+	color: @select-green;
+	background-size: 70%;
+}
+.prevbtn {
+	background: url(../img/left-arrow.svg) center no-repeat;
+	left: 0;
+}
+.nextbtn {
+	background: url(../img/right-arrow.svg) center no-repeat;
+	right: 0;
+}
+/* Оформление блока цен */
+.price {
+	background: @bg-price url("../img/price/price.bg.png") center;
+	min-height: 120rem;
+	&-header {
+		&-btn {
+			float: right;
+			margin-top: 13.6rem;
+			padding: 1.6rem 4.4rem;
+			.bold();
+			font-size: 1.5rem;
+		}
+
+	}
+		h2 {
+			font-size: 3.6rem;
+		}
+		p {
+			font-size: 1.7rem;
+			.reg();
+			margin-top: 3rem;
+		}
+	&-block {
+		text-align: center;
+		background-color: @light;
+		padding: 3.5rem;
+		h3 {
+			.bold();
+			margin-bottom: 3rem;
+
+		}
+		img {
+			width: 100%;
+			max-width: 40rem;
+			display: block;
+			text-align: center;
+		}
+	}
+	&-tag {
+		font-size: 1.9rem;
+		.bold();
+		margin-top: 2rem;
+		display: block;
+	}
+	&-big {
+		font-size: 2.3rem;
+	}
+	&-list {
+		list-style: none;
+		font-size: 1.7rem;
+		.reg();
+		padding: 0;
+		margin-top: 2rem;
+		margin-bottom: 0;
+		min-height: 16rem;
+		line-height: 3rem;
+		li {
+			&:before {
+				content: '';
+				margin-right: 1rem;
+				display: inline-block;
+				width: 1.4rem;
+				height: 1.4rem;
+				vertical-align: middle;
+				background: url('../img/price/check.png') no-repeat center; 
+				background-size: 100%;
+  }			
+}
+	}
+	&-shop{
+		&-btn {
+			.bold();
+			padding: 1.7rem 5rem;
+			font-size: 1.7rem;
+		}
+	}
+}
+/* Секция с отзывами */
+.feedback {
+	min-height: 120rem;
+	background: url('../img/feedback/feedback-bg.png') no-repeat center;
+	background-size: cover;
+	&-header {
+		font-size: 3.6rem;
+	}
+	&-prev-btn {
+		left: -4rem;
+	}
+	&-next-btn {
+		right: -4rem;
+	}
+	&-slider {
+		padding: 5rem 6rem;
+		box-shadow: 0 12px 18px rgba(0, 0, 0, 0.11);
+		background-color: @light;
+		p {
+			font-size: 1.6rem;
+		}
+		&-btn {
+			position: absolute;
+			top: 45%;
+			transition: translateY(-50%);
+			width: 4rem;
+			height: 5rem;
+			background-color: @select-green;
+			border: none;
+		}
+		&_item {
+				img {
+					width: 100%;
+				}
+				.media {
+					margin-top: 3rem;
+					img {
+						width: 10%;
+					}
+					.customer {
+						font-size: 1.4rem;
+						&-name {
+						font-size: 1.6rem;
+						.bold();
+						}
+					}
+				}
+		}
+	}
+	&-text {
+		font-style: italic;
+		margin-top: 2rem;
+		border: 2px solid @select-green;
+		padding: 1rem;
+		position: relative;
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: -2rem;
+			left: 4rem;
+			width: 2rem;
+			height: 2rem;
+			border: 2px solid @select-green;
+			background-color: @light;
+			border-bottom: none; 
+			border-top-right-radius: 10rem;
+		}
+	}
+}
+
+.feedback {
+	&-form {
+			position: relative;
+			text-align: center;
+			background-color: #fff;
+			margin-top: 11rem;
+
+			padding: 3rem 5rem;
+			h3 {
+			font-size: 2.2rem;
+			.bold();
+				}
+				input {
+					height: 5rem;
+					width: 90%;
+					border-radius: 5px;
+					border: 1px solid #ddd;
+					margin-top: 3rem;
+					margin-bottom: 1rem;
+				}
+				label {
+					position: absolute;
+					left: 50%;
+					transform: translateX(-50%) translateY(75%);
+					border: 2.5px solid #fff;
+					background-color: #fff;
+					font-size: 1.3rem;
+
+				}
+				&-subtitle {
+					.reg();
+					font-size: 13px;
+					margin-top: 10px;
+				}
+				.text-input-name, .text-input-phone {
+					font-size: 1.7rem;
+				}
+					&-btn {
+					height: 6.5rem;
+					width: 45%;
+					.bold();
+					font-size: 16px;
+					&:hover {
+    				cursor: pointer;
+    				background-color: darken(@btn, 7%);
+   			 		}
+	}
+	}
+
+}
+.img-hand {
+	position: absolute;
+	transform: translateX(5%) translateY(30%);
+	left: 14rem;
+}
+
+/* Схема работы */
+.sheme {
+	background: #fff url(../img/sheme/background.png) bottom -15rem right -15rem no-repeat;
+	background-size: 96rem;
+	&-section-header {
+	      color: @htext;
+	   	text-align: center;
+	   	margin-top: 10rem;
+	   	margin-bottom: 6rem;
+		h2 {
+			.bold();
+			font-size: 3.6rem;
+			margin-bottom: 4rem;
+
+		}
+		p {
+			.bold();
+			font-size: 1.9rem;
+		}
+	}
+	&-img {
+		min-height: 11.3rem;
+	}
+	&-block{
+			min-height: 30rem;
+	h3 {
+		.bold();
+		margin-top: 3rem;
+		margin-bottom: 1.4rem;
+		font-size: 2.2rem;
+	}
+	p {
+		.reg();
+		font-size: 1.7rem;
+		margin-bottom: 6rem;
+	}
+}
+}
+
+/* Все включено */
+.all-include {
+	min-height: 66rem;
+	padding-top: 0.1rem;
+	//transform: translateY(-40%);
+	background-color: @bg-light;
+	.section-header-green {
+		margin-bottom: 10rem;
+		h2 {
+			margin-top: 12rem;
+			font-size: 4.8rem;
+			color: @green;
+		}
+		p {
+			font-size: 1.6rem;
+			margin-top: 4rem;
+		}
+	}
+	.circle {
+		display: inline-block;
+		background-color: @green;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		&-border {
+			display: inline-block;
+			width: 5rem;
+			height: 5rem;
+			border: 2px solid @green;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 4rem;
+			padding: 0.3rem;	
+			color: @light;
+			.bold();
+			font-size: 1.9rem;
+		}
+	}
+	.media {
+       margin-bottom: 5rem;
+		&-body {
+			padding-top: 1.2rem;
+			padding-left: 1.4rem; 
+			h5 {
+				.bold();
+				font-size: 1.6rem;
+			}
+			p {
+				font-size: 1.3rem;
+
+			}
+		}
+	}
+}
+
+/*Мы равеем все сомнения*/
+.problems {
+	position: relative;
+	&-women {
+		position: absolute;
+		bottom: -10rem;
+		left: 48%;
+		width: 30rem;
+		margin-left: -15rem;
+	}
+	h1 {
+		text-align: center;
+		font-size: 3.6rem;
+		.bold();
+		margin-top: 12rem;
+		margin-bottom: 8rem;
+	}
+	&-list {
+		border: 4px solid;
+		padding: 3rem 4rem 0 3rem;
+		min-height: 42rem;
+		ul {
+			list-style: none;
+			padding-left: 0;
+			li {
+				font-size: 1.6rem;
+				margin-bottom: 3rem;
+				position: relative;
+				padding-left: 3.9rem;
+				&:before {
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 3rem;
+					height: 3rem;
+				}
+			}
+		}
+		&_bad {
+			border: solid #e8e8e8;
+			h4 {
+				opacity: 0.5;
+				font-size: 2rem;
+				margin-bottom: 4rem;
+			}
+			ul li:before {
+				background: url('../img/problems/bad-symbol-pn.png') center center no-repeat;
+			}
+		}
+		&_good {
+			border: solid #358015;
+				h4 {
+				font-size: 2rem;
+				margin-bottom: 4rem;
+			}
+			ul li:before {
+				background: url('../img/problems/good-symbol-pn.png') center center no-repeat;
+			}
+		}
+	}
+}
+
+/* Блок с материалами */
+
+.materials {
+	background: @light url('../img/materials/materials-bg.png') center no-repeat;
+	background-size: cover;
+	.section-header {
+		h2 {
+			padding-top: 10rem;
+			padding-bottom: 5rem;
+			font-size: 3.6rem;
+			.bold();
+		}
+		p {
+			font-size: 1.9rem;
+			.reg();
+		}
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+	&-link {
+		font-size: 1.6rem;
+		color: #6ba253;
+		text-decoration: underline;
+		&:hover {
+			color: darken(#6ba253, 20%);
+		}
+	}
+	&-offer {
+		font-size: 1.8rem;
+		text-align: center;
+		.reg();
+		margin-top: 7rem;
+		padding-bottom: 8rem;
+		margin-bottom: 0;
+	}
+}
+
+/* Посмотрите как мы работаем */
+.tour {
+	main {
+		background: @light url('../img/tour/tour-bg.png') -50% no-repeat;
+		background-size: cover;
+	}
+	.main-content-right-form-btn {
+		height: 6rem;
+		font-size: 13px;
+	}
+}
+
+/* Дополнительные услуги */
+.upsell {
+	position: relative;
+	background-color: @bg;
+	color: @light;
+	.section-header {
+		h2 {
+			padding-top: 12rem;
+			font-size: 3.6rem;
+			color: @light;
+		}
+		p {
+			padding-top: 5rem;
+			font-size: 1.9rem;
+			color: @light;
+			.reg();
+		}
+		margin-bottom: 7rem;
+		margin-top: 0;
+	}
+		&-block {
+			text-align: center;
+			p {
+				.bold();
+				font-size: 2rem;
+				padding-top: 3rem;
+			}
+			.button {
+				font-size: 1.6rem;
+				padding: 1rem 4rem;
+				.bold();
+			}
+		}
+}
+/* Оформление модальных окон */
+.popup {
+display: none;
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+height: 100%;
+width: 100%;
+z-index: 9;
+background-color: rgba(0, 0, 0, 0.5); 
+	&-close {
+		position: absolute;
+		top: -2.4rem;
+		right: -5rem;
+		border: none;
+		background-color: transparent;
+		color: @light;
+		text-align: center;
+		width: 5rem;
+		font-size: 5rem;
+		&:focus, &:active
+		 {
+			border: none;
+			outline: none;
+		}
+	}
+	&-content {
+		text-align: center;
+			position: fixed;
+	left: 50%;
+	top: 10%;
+	background-color: #fff;
+	transform: translateX(-50%);
+	padding: 4rem 5rem;
+		h4 {
+			font-size: 2rem;
+			.bold();
+			margin: 0;
+		}
+		p {
+			font-size: 1.8rem;
+		}
+	}
+	&-form {
+		.popup-name, .popup-phone, textarea {
+			display: block;
+			width: 100%;
+			font-size: 1.6rem;
+			&:focus {
+				outline: none;
+			}
+		}
+		textarea {
+			border-radius: 5px;
+					border: 1px solid #ddd;
+
+		}
+input {
+					border-radius: 5px;
+					border: 1px solid #ddd;
+					height: 4rem;
+			}
+			.popup-massage, .popup-phone-label, .popup-name-label {
+					transform: translateY(72%);
+					border: 2.5px solid #fff;
+					background-color: #fff;
+					font-size: 1.3rem;
+			}
+	}
+}
+/* Адаптация */
+@media (max-width: 1190px) {
+	.phone-link {
+	left: -25%;
+	}
+	.price {
+		&-header {
+			&-btn {
+				padding: 1.2rem;
+				margin-top: 4rem;
+				font-size: 1.5rem;
+				margin-bottom: 4rem;
+			}
+		}
+		h2 {
+			font-size: 3.4rem;
+		}
+		p {
+			font-size: 1.7rem;
+			.bold();
+		}
+		&-block {
+			margin-bottom: 2rem;
+		}
+	}
+	.section-header {
+		&_light {
+			margin-bottom: 0;
+		}
+	}
+	.feedback {
+		&-prev-btn {
+		left: 0;
+		}
+		&-next-btn {
+			right: 0;
+		}
+	}
+	.fotorama {
+		margin-bottom: 3rem;
+	}
+	.img-hand {
+		display: none;
+	}
+	.sheme {
+	background: #fff url(../img/sheme/background.png) bottom -12rem right -15rem no-repeat;
+	background-size: 68rem;
+	}
+	.all-include {
+		.media {
+			margin-bottom: 6rem;
+		}
+	}
+	.problems {
+		&-women {
+			display: none;
+		}
+		&-list {
+			min-height: 30rem;
+			&_bad {
+			margin-bottom: 3rem;	
+			}
+		}
+	}
+	.tour {
+		main {
+			background: @light;
+		}
+	}
+	.upsell {
+		&-block {
+			.button {
+				margin-bottom: 1.4rem;
+			}
+		}
+	}
+}
+@media (max-width: 991px) {
+	.main {
+		background-position: top right;
+		&-content {
+			&-left {
+				text-align: center;
+				&-fact {
+					padding-bottom: 1rem;
+				}
+		 	}
+			&-right {
+				&-form {
+		width: 50%;
+		position: relative;
+		left: 25%;
+				}
+			}
+		}
+	}	
+	.price {
+		&-header {
+			&-btn {
+				padding: 1.2rem;
+				margin-top: 3rem;
+				font-size: 1.69rem;
+				margin-bottom: 4rem;
+			}
+		}
+		&-block {
+			margin-bottom: 2rem;
+		}
+	}
+	.section-header {
+		&_light {
+			margin-bottom: 0;
+			h2 {
+				font-size: 3.6rem;
+			}
+			p {
+				font-size: 1.7rem;
+			}
+		}
+	}
+		.sheme {
+	background: #fff url(../img/sheme/background.png) bottom -12rem right -15rem no-repeat;
+	background-size: 75rem;
+	}
+}
+@media (max-width: 767px){
+	.main {
+		background-position: top left;
+	}
+	.phone-link {
+	left: 25%;
+	}
+	.header .btn-header {
+		left: 30%;
+		margin-top: 2rem;
+	}
+		.main-content-right-form {
+		width: 100%;
+		position: relative;
+		left: 0;
+	}
+	.features {
+		.section-header {
+			font-size: 3.1rem;
+			margin-bottom: 10rem;
+		}
+	}
+	.popup {
+		&-content {
+			h4 {
+				font-size: 1.7rem;
+			}
+			p {
+				font-size: 1.5rem;
+				margin: 0;
+			}
+		}
+	}
+	.price {
+				&-header {
+			&-btn {
+				padding: 1.5rem;
+				font-size: 1.25rem;
+			}
+		}
+		&-block {
+			h3 {
+				font-size: 1.65rem;
+			}
+		}
+	}
+	.feedback {
+		&-form {
+			h3 {
+				font-size: 2rem;
+			}
+			&-btn {
+				font-size: 1.3rem;
+				height: 4.5rem;
+				width: 52%;
+			}
+		}
+	}
+	.sheme {
+	background: #fff url(../img/sheme/background.png) bottom -12rem right -15rem no-repeat;
+	background-size: 60rem;
+	}
+	.all-include {
+		.section-header-green {
+			h2 {
+				font-size: 4rem;
+			}
+		}
+	}
+}
+@media (max-width: 576px){
+.main-content-left-header {
+	h1 {
+		font-size: 2.7rem;
+	}
+	}
+	.header .btn-header {
+		left: 22%;
+	}
+	.phone-link {
+		font-size: 1.5rem;
+		left: 30%;
+	}
+	.features {
+		.section-header {
+			font-size: 2.3rem;
+			margin-bottom: 8rem;
+		}
+	}
+	.popup {
+		&-content {
+			padding: 2rem 4rem;
+			p {
+				font-size: 1.5rem;
+			}
+			h4 {
+				font-size: 1.9rem;
+			}
+		}
+		&-form {
+			.popup-name, .popup-phone, textarea {
+				width: 22rem;
+				&-btn {
+					font-size: 13px;
+				}
+			}
+		}
+		&-close {
+			top: -2.4rem;
+			right: -4.2rem;
+			font-size: 4rem;
+		}
+	}
+	.price {
+				&-header {
+			&-btn {
+				padding: 1.5rem;
+				font-size: 1.1rem;
+			}
+		}
+				&-block {
+			h3 {
+				font-size: 1.44rem;
+			}
+		}
+		&-list {
+			font-size: 1.7rem;
+		}
+	}
+	.feedback-slider_item .media img {
+			width: 13%;
+	}
+.feedback {
+		&-form {
+			h3 {
+				font-size: 1.9rem;
+			}
+		&-btn {
+			    font-size: 0.9rem;
+   			 height: 4.5rem;
+   			 width: 63%;
+		}
+		}
+	}
+	.sheme {
+	background: none;
+	&-block {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+	}
+		.all-include {
+		.section-header-green {
+			h2 {
+				font-size: 2.7rem;
+			}
+		}
+	}
+	.problems {
+		&-list {
+			min-height: 35rem;
+		}
+	}
+}
+@-moz-document url-prefix() {
+ .label-phone-firefox{
+    margin-top: 7rem;
+ }
+}
+/* Ok h*/
